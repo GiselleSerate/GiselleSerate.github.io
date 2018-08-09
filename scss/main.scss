@@ -25,17 +25,34 @@ body {
     // grid-template-areas:  "header header"
     //                       "generalcontent sidebar"
   }
+  #header.minimized {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    h1 {
+      font-size: 15px;
+    }
+    .icons {
+      text-align: right;
+    }
+  }
 }
 
 // Page header. 
-.header {
+#header {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 20px;
   background: green;
   // Triangle! 
-  clip-path: polygon(0 0, 100% 0, 0 100%); 
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);//, 0 100%); 
   // Keep header at the top of the page. 
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 60%; // Since this is fixed, not sticky. 
   // Recolor links inside the header since they're on a dark bg. 
   a {
     color: $accent;
@@ -46,6 +63,10 @@ body {
       color: white;
     }
   }
+}
+
+#headspace {
+  height: 105px; // If this is a little large, that's not a problem. 
 }
 
 // Links.

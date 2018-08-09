@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+$accent: #003407; 
+$accent-active: #0a4e08;
+$accent-off: #2a6e29;
+
+// General styling. 
 html {
-	color: red;
+	font-family: 'Raleway', sans-serif;
+}
+
+// General layout. 
+body {
+  width: 60%;
+  margin: auto;
+}
+
+// Links.
+a {
+  color: $accent;
+  &:active, &:hover, &:focus {
+    color: $accent-active;
+  }
+  &:visited {
+    color: $accent-off;
+  }
+}
+
+// Headers. 
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Playfair Display', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  // text-transform: uppercase;
+}
+
+.icons {
+  font-size: 14pt;
+  .resume { // He's a little big. 
+    font-size: 13pt;
+  }
 }

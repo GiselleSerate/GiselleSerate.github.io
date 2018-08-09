@@ -1,0 +1,33 @@
+{
+  "name": "giselleserate.github.io",
+  "version": "1.0.0",
+  "description": "Giselle Serate's personal website",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js --progress --colors",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiselleSerate/GiselleSerate.github.io.git"
+  },
+  "author": "Giselle Serate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiselleSerate/GiselleSerate.github.io/issues"
+  },
+  "homepage": "https://github.com/GiselleSerate/GiselleSerate.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

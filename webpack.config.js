@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "development",
   // Javascript file to bundle. 
   entry: "./js/app.js",
   // This file gets loaded into my index.
@@ -12,13 +13,19 @@ module.exports = {
     inline: true
   },
 
-  // // Add sass-loader.
-  // module: {
-  //   loaders: [
-  //     {
-  //       test: /\.scss$/,
-  //       loaders: ["style", "css", "sass"]
-  //     }
-  //   ]
-  // }
+  // Add sass-loader.
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "sass-loader"
+        }]
+      }
+    ]
+  }
 }

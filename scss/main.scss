@@ -2,19 +2,32 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
+// Accent; yeah, it's Slytherin. 
 $accent: #003407; 
 $accent-active: #0a4e08;
 $accent-off: #2a6e29;
+$accent-white: lighten($accent, 80%); // They call this off-white in the accent direction. 
+
+// Muted; for backgrounds. 
+$muted-bright: green;
+$muted-faded: lighten(black, 85%); // Gray. lol. 
 
 // General styling. 
-html {
+* {
 	font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
 }
 
 // General layout. 
-body {
+#page-container {
   width: 60%;
   margin: auto;
+  background: $muted-faded;
 }
 
 // If CSS grid is supported . . . oh boyo. 
@@ -30,6 +43,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    // Make sure the header fits inside the page content. 
+    width: 60%;
     h1 {
       font-size: 15px;
     }
@@ -46,13 +61,13 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   padding: 20px;
-  background: green;
+  background: $muted-bright;
   // Triangle! 
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);//, 0 100%); 
   // Keep header at the top of the page. 
   position: fixed;
   top: 0;
-  width: 60%; // Since this is fixed, not sticky. 
+  width: 70%; // Start the triangle slightly longer than the page-content div. 
   // Recolor links inside the header since they're on a dark bg. 
   a {
     color: $accent;
@@ -60,7 +75,7 @@ body {
       color: $accent;
     }
     &:hover, &:focus, &:active {
-      color: white;
+      color: $accent-white;
     }
   }
 }
@@ -68,6 +83,14 @@ body {
 #headspace {
   height: 105px; // If this is a little large, that's not a problem. 
 }
+
+.icons {
+  font-size: 14pt;
+  .resume { // He's a little big. 
+    font-size: 13pt;
+  }
+}
+
 
 // Links.
 a {
@@ -80,15 +103,15 @@ a {
   }
 }
 
+
 // Headings. 
 h1, h2, h3, h4, h5, h6 { 
   font-family: 'Playfair Display', sans-serif;
   margin: 0;
 }
 
-.icons {
-  font-size: 14pt;
-  .resume { // He's a little big. 
-    font-size: 13pt;
-  }
+
+// Content divs. 
+.content-box {
+  margin: 10px;
 }

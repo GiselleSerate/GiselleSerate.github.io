@@ -12,13 +12,13 @@ module.exports = {
     inline: true
   },
 
-  // Add sass-loader.
-  module: {
-    loaders: [
-      {
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
-      }
-    ]
-  }
+  // // Add sass-loader.
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /\.scss$/,
+  //       loaders: ["style", "css", "sass"]
+  //     }
+  //   ]
+  // }
 }

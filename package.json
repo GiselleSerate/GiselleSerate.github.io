@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/webpack/bin/webpack.js --progress --colors",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   "homepage": "https://github.com/GiselleSerate/GiselleSerate.github.io#readme",
   "devDependencies": {
     "node-sass": "^4.9.2",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }

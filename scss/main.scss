@@ -17,25 +17,37 @@ body {
   margin: auto;
 }
 
+// Page header. 
+.header {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  background: green;
+  padding: 20px;
+  a {
+    color: $accent;
+    &:visited {
+      color: $accent;
+    }
+    &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+}
+
 // Links.
 a {
   color: $accent;
-  &:active, &:hover, &:focus {
-    color: $accent-active;
-  }
   &:visited {
     color: $accent-off;
   }
+  &:hover, &:focus, &:active {
+    color: $accent-active;
+  }
 }
 
-// Headers. 
+// Headings. 
 h1, h2, h3, h4, h5, h6 { 
   font-family: 'Playfair Display', sans-serif;
   margin: 0;
-}
-
-h1 {
-  // text-transform: uppercase;
 }
 
 .icons {

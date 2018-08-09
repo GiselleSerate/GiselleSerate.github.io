@@ -17,11 +17,26 @@ body {
   margin: auto;
 }
 
+// If CSS grid is supported . . . oh boyo. 
+@supports(display: grid) {
+  body {
+    // display: grid;
+    // grid-template-rows: 1fr 1fr;
+    // grid-template-areas:  "header header"
+    //                       "generalcontent sidebar"
+  }
+}
+
 // Page header. 
 .header {
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-  background: green;
   padding: 20px;
+  background: green;
+  // Triangle! 
+  clip-path: polygon(0 0, 100% 0, 0 100%); 
+  // Keep header at the top of the page. 
+  position: sticky;
+  top: 0;
+  // Recolor links inside the header since they're on a dark bg. 
   a {
     color: $accent;
     &:visited {

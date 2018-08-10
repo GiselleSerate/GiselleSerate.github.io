@@ -92,6 +92,16 @@ body {
 }
 
 
+// Nav menu on the left. 
+#nav {
+  // background: $muted-faded;
+  transform: rotate(90deg);
+  position: fixed;
+  left: -2%;
+  bottom: 50%;
+}
+
+
 // Links.
 a {
   color: $accent;
@@ -104,14 +114,40 @@ a {
 }
 
 
-// Headings. 
-h1, h2, h3, h4, h5, h6 { 
+// Headings besides h1. 
+h2, h3, h4, h5, h6 { 
+  font-family: 'Playfair Display', sans-serif;
+  margin: 10px;
+}
+
+h1 {
   font-family: 'Playfair Display', sans-serif;
   margin: 0;
 }
-
+  
 
 // Content divs. 
 .content-box {
   margin: 10px;
+}
+
+@supports(display: grid) {
+  .two-col-grid {
+    display:grid;
+    grid-template-columns: 6fr 1fr;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    row-gap: 2px;
+    column-gap: 2px;
+    .date {
+      text-align: right;
+    }
+    .description {
+      grid-column: span 2;
+    }
+  }
+}
+
+.minor-title {
+  font-weight: bold;
 }

@@ -94,11 +94,10 @@ body {
 
 // Nav menu on the left. 
 #nav {
-  // background: $muted-faded;
-  transform: rotate(90deg);
   position: fixed;
-  left: -2%;
-  bottom: 50%;
+  writing-mode: vertical-rl;
+  top: 20%;
+  left: 10%;
 }
 
 

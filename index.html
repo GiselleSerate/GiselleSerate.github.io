@@ -1,8 +1,12 @@
 <html>
   <head>
     <title>Giselle Serate</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
   </head>
-  <body>
+  <body style="background-image: url(images/bg.jpg)">
     <div id="page-container">
       <!-- To fix the animation jitter from my header resizing. -->
       <div id="headspace">
@@ -19,190 +23,49 @@
         </div>
       </div>
 
-      <div id="nav">
+<!-- TODO: eventually i might want this again -->
+<!--       <div id="nav">
         <a href="#about">about</a> •
         <a href="#education">education</a> •
         <a href="#experience">experience</a> •
         <a href="#projects">projects</a> •
         <a href="#honors">honors</a> •
         <a href="#extracurriculars">extracurriculars</a>
-      </div>
+      </div> -->
 
-      <a name="about"></a>
-      <div class="about-box content-box">
+      <p class="tagline">
+        Computer Science, Harvey Mudd College 2020
+      </p>
 
-        <p class="tagline">
-          Computer Science, Harvey Mudd College 2020
-        </p>
-
-        <div class="content-box">
-          <a name="passions"></a>
-          <h3>passions</h3>
-          <ul>
-            <li>Open source</li>
-            <li>Solving challenging problems</li>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Bash</li>
-            <li>Robots</li>
-            <li>Efficiency</li>
-          </ul>
-        </div>
-
-        <div class="content-box">
-          <a name="languages"></a>
-          <h3>languages</h3>
-          <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>CSS/SASS</li>
-            <li>Bash</li>
-            <li>English</li>
-          </ul>
-        </div>
-
-        <div class="content-box">
-          <a name="technologies"></a>
-          <h3>technologies</h3>
-          <ul>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Google Sheets</li>
-            <li>Node.js</li>
-            <li>Arduino</li>
-          </ul>
-        </div>
-
-        <div class="content-box">
-          <a name="bonus"></a>
-          <h3>bonus</h3>
-          <ul>
-            <li>Swift</li>
-            <li>Angular2</li>
-            <li>SystemVerilog</li>
-            <li>Processing</li>
-            <li>R</li>
-            <li>Inkscape</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <a name="education"></a>
-      <h2>education</h2>
-      <h3>Harvey Mudd College</h3>
       <div class="content-box">
-        <span>B.S. Computer Science, 3.721 GPA<br>
-        August 2016-May 2020</span>
-        <div class="two-col-grid content-box">
-          <div>Computer Systems (CS 105) [C, x86 Assembly]</div><div class="date">2018</div>
-          <div>Digital Elec/Computer Engr (ENGR 85) [C, SystemVerilog, ARM Assembly]</div><div class="date">2018</div>
-          <div>Data Structures and Program Development: Computer Science (CS 70) [C++]</div><div class="date">2017</div>
-          <div>Principles and Practice: Computer Science (CS 42)</div><div class="date">2016</div>
-        </div>
+        <a name="passions"></a>
+        <h3>passions</h3>
+        <ul>
+          <li>Security</li>
+          <li>Open source</li>
+          <li>Solving cool problems</li>
+          <li>Git</li>
+          <li>Linux</li>
+          <li>Bash</li>
+          <li>Robots</li>
+          <li>Automation</li>
+          <li>Efficiency</li>
+        </ul>
       </div>
-      
-      <h3>University of Nevada, Reno</h3>
+
       <div class="content-box">
-        <span>Dual Enrollment<br>
-        August 2011-May 2016</span>
-        <div class="two-col-grid content-box">
-          <div>Computer Science I (CS 135) [C]</div><div class="date">2016</div>
-          <div>Intro to Computing (CS 105)</div><div class="date">2015</div>
-        </div>
+        <h3>languages</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>JavaScript</li>
+          <li>CSS/SASS</li>
+          <li>Bash</li>
+          <li>English</li>
+        </ul>
       </div>
-
-      <h3>The Davidson Academy of Nevada</h3>
-      <div class="content-box">
-        <span>High School, 4.18 GPA (3.96 unweighted)<br>
-        August 2011-May 2016</span>
-      </div>
-
-      <a name="experience"></a>
-      <h2>experience</h2>
-      <div class="content-box two-col-grid">
-        <div><span class="minor-title">Viasat</span>, Radio Frequency Environment Generation (Tactical Data Links)</div><div class="date">2018</div>
-        <div class="description">Developer for the GUI on the VRG-1000, a radio frequency generator which was formerly limited by its graphics to simulate only 50 platforms.</div>
-        <div class="description">Prototyping: Updated GUI to improve performance to a thousand platforms, using Javascript, HTML, and CSS.</div>
-        <div class="description">Scripting: Wrote Python script to sort and filter data sent via UDP into multiple CSV files.</div>
-        <div class="description">Optimization: Created Bash scripts to make development workflow more efficient.</div>
-      </div>
-
-      <div class="content-box two-col-grid">
-        <div><span class="minor-title">Harvey Mudd College</span>, Computer Science Department</div><div class="date">2017-2018</div>
-        <div class="description">Grutor (Grader/Tutor) for CS 42, Head Grutor for CS 70.</div>
-        <div class="description">Grading: Evaluated and gave feedback on students' code.</div>
-        <div class="description">Tutoring: Held weekly office hours to answer students' questions and help with homework.</div>
-        <div class="description">Development: Wrote digital queue in Google Sheets to streamline helping students during tutoring hours.</div>
-        <div class="description">Leadership: Worked with professors to most effectively use grutors to help students.</div>
-      </div>
-
-      <div class="content-box two-col-grid">
-        <div><span class="minor-title">SuiteLife</span>, Startup</div><div class="date">2017</div>
-        <div class="description">Developer, co-founder, and CEO of communal grocery sharing app under the Harvey Mudd College Summer Startup program. The web app can be found <a href="https://suite-life.org">here</a>.</div>
-        <div class="description">Development: Wrote iOS app using Swift, and also ported it to the web with TypeScript, HTML, and CSS/SASS in the Angular2 framework. Interfaced both apps with Firebase.</div>
-        <div class="description">Leadership: Coordinated interdisciplinary team to create an app from concept to prototype.</div>
-        <div class="description">Presentation: Pitched to Harvey Mudd College Entrepreneurial Network in Menlo Park.</div>
-      </div>
-
-      <div class="content-box two-col-grid">
-        <div><span class="minor-title">University of Nevada, Reno</span>, Computer Science Department</div><div class="date">2014-2016</div>
-        <div class="description">Content creator for university STEM outreach program. Videos and white papers can be found <a href="http://sensor.nevada.edu/nexus/education/stembops">here</a>.</div>
-        <div class="description">Outreach: Authored white papers on the applications of 3D printing and Python as a first programming language and created educational STEM videos in English and Spanish.</div>
-        <div class="description">Robotics: 3D printed, wired, and programmed robotic hand.</div>
-        <div class="description">Research: Worked with professors, students, and companies on drone research.</div>
-      </div>
-
-      <a name="projects"></a>
-      <h2>projects</h2>
-      <div class="two-col-grid content-box">
-        <div class="minor-title"><a href="http://github.com/GiselleSerate/myaliases">myaliases</a></div><div class="date">2017-2018</div>
-        <div class="description">Created GitHub-hosted library of helpful Bash utilities.</div>
-
-        <div class="minor-title">Study Cloud</div><div class="date">2016-2018</div>
-        <div class="description">Collaborated to redesign a student resource sharing website.</div>
-
-        <div class="minor-title">Jam Society</div><div class="date">2018</div>
-        <div class="description">Wrote music equipment inventory/checkout system in Google Sheets.</div>
-
-        <div class="minor-title"><a href="http://fyrerobotics.org/">FIRST Young Robotics Engineers</a></div><div class="date">2015-2016</div>
-        <div class="description">Programmed robot in C++, built team website, designed logo.</div>
-
-        <div class="minor-title"><a href="http://giselleserate.github.io/potential/">Girls Who Code Final Project</a></div><div class="date">2015</div>
-        <div class="description">Used Python, Javascript, HTML, CSS, JQuery, GitHub to make a web game.</div>
-      </div>
-
-      <a name="honors"></a>
-
-      <h2>honors</h2>
-      <div class="two-col-grid content-box">
-        <div>Harvey Mudd College First Year Writing Prize</div><div class="date">2017</div>
-        <div>SWE Award</div><div class="date">2016</div>
-        <div>US Presidential Scholar Candidate</div><div class="date">2016</div>
-        <div>National Merit Scholarship Competition Semifinalist and Finalist</div><div class="date">2016</div>
-        <div>NCWIT Aspirations in Computing Affiliate Award</div><div class="date">2016</div>
-        <div>AP Scholar with Honor, AP Scholar with Distinction</div><div class="date">2015</div>
-      </div>
-
-      <a name="extracurriculars"></a>
-      <h2>extracurriculars</h2>
-
-      <div class="two-col-grid content-box">
-        <div class="minor-title">STEAM:Coders</div><div class="date">2016</div>
-        <div class="description">Taught Scratch to elementary school students.</div>
-
-        <div class="minor-title">Lemelson STEM Academy</div><div class="date">2016</div>
-        <div class="description">Taught Processing to 4th and 5th graders.</div>
-        <div class="minor-title">Davidson Academy Yearbook</div><div class="date">2011-2016</div>
-        <div class="description">Served as Editor-in-Chief (since 2013).</div>
-        
-        <div class="minor-title">WiCSE (Women into Computer Science and Engineering)</div><div class="date">2014-2015</div>
-        <div class="description">Organized CS outreach.</div>
-      </div>
-
     </div>
     <script src="bundle.js"></script>
   </body>

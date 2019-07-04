@@ -21,13 +21,16 @@ $muted-faded: lighten(black, 85%); // Gray. lol.
 body {
   margin: 0px;
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 // General layout. 
 #page-container {
   width: 60%;
   margin: auto;
-  background: $muted-faded;
 }
 
 // If CSS grid is supported . . . oh boyo. 
@@ -128,35 +131,11 @@ h1 {
 // Content divs. 
 .content-box {
   margin: 10px;
+  background: rgba($muted-faded, .4);
 }
 
-@supports(display: grid) {
-  .about-box {
-    display: grid;
-    grid-template-areas: "tagline tagline"
-                         ".       ."
-                         ".       .";
-  }
-
-  .tagline {
-    grid-area: tagline;
-  }
-
-  // What is this bit for? are we using it at all?
-  // .two-col-grid {
-  //   display:grid;
-  //   grid-template-columns: 6fr 1fr;
-  //   grid-row-gap: 2px;
-  //   grid-column-gap: 2px;
-  //   row-gap: 2px;
-  //   column-gap: 2px;
-  //   .date {
-  //     text-align: right;
-  //   }
-  //   .description {
-  //     grid-column: span 2;
-  //   }
-  // }
+.tagline {
+  background: rgba($muted-faded, .4);  
 }
 
 .minor-title {

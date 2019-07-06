@@ -27,6 +27,19 @@ body {
   background-attachment: fixed;
 }
 
+// Div with my clip in the foreground
+#foreground-clip {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 // General layout. 
 #page-container {
   width: 60%;
